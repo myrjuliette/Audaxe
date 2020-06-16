@@ -1021,7 +1021,7 @@ input[type="button"]:focus {
 		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
 		width: 70%;
-		top: 200px;
+		bottom: -10px;
 
 	}
 	.about__content {
