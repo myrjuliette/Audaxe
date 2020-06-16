@@ -13,7 +13,7 @@ html {
 
 body {
 	margin: 0;
-	background-image: linear-gradient(rgba(209, 184, 184,0.3),rgba(209, 184, 184,0.3)), url('../img/fond6.jpg');
+	background-image: linear-gradient(rgba(209, 184, 184,0.3),rgba(209, 184, 184,0.3));
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: contain;
