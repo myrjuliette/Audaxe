@@ -3,6 +3,7 @@
 @import 'https://fonts.googleapis.com/css?family=Allura|Merriweather+Sans:400,700,800';
 */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;800&family=Montserrat&family=Open+Sans&display=swap');
 
 html {
 	font-family: sans-serif;
@@ -13,12 +14,28 @@ html {
 
 body {
 	margin: 0;
-	background-image: linear-gradient(rgba(209, 184, 184,0.3),rgba(209, 184, 184,0.3));
+	background-image: linear-gradient(rgba(209, 184, 184,0.3),rgba(209, 184, 184,0.3)), url('../img/fond.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: top center;
 }
+
+@media (max-width: 540px) {
+	body {
+		background-image: linear-gradient(rgba(209, 184, 184,0.3),rgba(209, 184, 184,0.3)), url('../img/fond_mini.jpg');
+		background-size: none;
+	}
+
+}
+
+@media (max-width: 1920px){
+	body {
+		background-size: none;
+	}
+}
+
+
 
 article,
 aside,
@@ -230,7 +247,7 @@ th {
 body {
 	font-size: 16px;
 	line-height: 1.6;
-	font-family: "Roboto", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	color: #9e9e9e;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
@@ -258,7 +275,8 @@ h4,
 h5,
 h6 {
 	color: #222;
-	font-weight: bold
+	font-weight: bold;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 .gigantic {
@@ -348,7 +366,7 @@ body {
 
 a {
 	display: inline-block;
-	color: indianred;
+	color: #C92009;
 	text-decoration: none
 }
 
@@ -410,7 +428,8 @@ textarea {
 	background-color: #fff;
 	z-index: 100;
 	-webkit-transition: opacity .4s .4s;
-	transition: opacity .4s .4s
+	transition: opacity .4s .4s;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 .splashscreen--is-hidden {
@@ -436,7 +455,7 @@ textarea {
 	left: 0;
 	right: 45px;
 	bottom: 0;
-	border: 10px solid indianred;
+	border: 10px solid #C92009;
 	-webkit-animation: fadeInOut 1.6s linear infinite;
 	animation: fadeInOut 1.6s linear infinite
 }
@@ -470,7 +489,7 @@ textarea {
 	display: block;
 	width: 100%;
 	height: 1px;
-	background-color: indianred;
+	background-color: #C92009;
 	-webkit-transition: -webkit-transform .2s ease-out;
 	transition: -webkit-transform .2s ease-out;
 	transition: transform .2s ease-out;
@@ -515,8 +534,8 @@ input[type="reset"]:focus,
 input[type="button"]:hover,
 input[type="button"]:active,
 input[type="button"]:focus {
-	color: indianred;
-	border-color: indianred;
+	color: #C92009;
+	border-color: #C92009;
 }
 
 .blurb--framed {
@@ -674,7 +693,8 @@ input[type="button"]:focus {
 
 .navigation__list>li a {
 	color: #5e1d1d;
-	font-size: 16px;
+	font-size: 20px;
+	font-family: 'Maven Pro', sans-serif;
 	text-transform: uppercase;
 	-webkit-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out
@@ -864,6 +884,7 @@ input[type="button"]:focus {
 
 .introduction::before {
 	content: "audaxe";
+	font-family: 'Maven Pro',sans-serif;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -878,6 +899,7 @@ input[type="button"]:focus {
 	color: #5e1d1d;
 	font-size: 20px;
 	font-weight: 800;
+	font-family: 'Maven Pro', sans-serif;
 	
 }
 
@@ -890,19 +912,23 @@ input[type="button"]:focus {
 	transform: translateX(-30px);
 	opacity: 0;
 	background: linear-gradient(to right, rgba(250,250,250,0.5), rgba(250,250,250,0.5) 30%, rgba(250,250,250,0));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height:70px;
 }
 
 .introduction__content-el--description {
 	-webkit-transform: matrix(1.0110731102, 0, 0, 1.0110731102, 0, 0);
 	transform: matrix(1.0110731102, 0, 0, 1.0110731102, 0, 0);
 	margin: 10px 0;
-	color: indianred;
+	color: #C92009;
 	font-size: 16vw;
 	text-align: center;
 	text-transform: lowercase;
 	text-shadow: 10px 18px 35px rgba(88, 88, 88, 0.23);
 	background: none;
-	font-family: Orbitron;
+	font-family: 'Maven Pro', sans-serif;
 }
 
 .introduction__content-el--job {
@@ -911,6 +937,11 @@ input[type="button"]:focus {
 	text-align: right;
 	opacity: 0;
 	background: linear-gradient(to left, rgba(250,250,250,0.5), rgba(250,250,250,0));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 70px;
+	font-size: 24px;
 }
 
 .introduction__arrow {
@@ -920,7 +951,7 @@ input[type="button"]:focus {
 	-webkit-transform: translate(-12px, 0px);
 	transform: translate(-12px, 0px);
 	width: 24px;
-	fill: indianred;
+	fill: #C92009;
 	-webkit-animation: scrollDown 1.6s infinite;
 	animation: scrollDown 1.6s infinite
 }
@@ -970,7 +1001,7 @@ input[type="button"]:focus {
 	left: 0;
 	right: 120px;
 	bottom: 45px;
-	border: 10px solid indianred;
+	border: 10px solid #C92009;
 }
 
 .about__visual {
@@ -993,7 +1024,7 @@ input[type="button"]:focus {
 	bottom: -175px;
 	right: 200px;
 	font-size: 30px;
-	font-family: "Allura", cursive
+	font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -1067,7 +1098,7 @@ input[type="button"]:focus {
 	}
 }
 
-.app-design {
+.presentation {
 	position: relative;
 	width: 100%;
 	padding: 180px 0;
@@ -1075,47 +1106,47 @@ input[type="button"]:focus {
 	background: rgba(250,250,250,0.5);
 }
 
-.app-design__visual {
+.presentation__visual {
 	position: absolute;
 	top: 35px;
 	left: 45%;
 	width: 1036px;
 	height: 659px;
 	margin: 0;
-	background-image: url("../img/app-design-visual.png");
+	background-image: url("../img/presentation-visual.png");
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat
 }
 
 @media (max-width: 991px) {
-	.app-design__content h2 {
+	.presentation__content h2 {
 		font-size: 48px
 	}
-	.app-design__visual {
+	.presentation__visual {
 		width: 922px;
 		height: 586px
 	}
 }
 
 @media (max-width: 767px) {
-	.app-design {
+	.presentation {
 		height: 400px;
 		padding: 60px 0
 	}
-	.app-design__content {
+	.presentation__content {
 		text-align: center
 	}
-	.app-design__content h2 {
+	.presentation__content h2 {
 		font-size: 32px
 	}
-	.app-design__content h2 br {
+	.presentation__content h2 br {
 		display: none
 	}
-	.app-design__content p {
+	.presentation__content p {
 		margin: 0 auto 20px auto
 	}
-	.app-design__visual {
+	.presentation__visual {
 		top: auto;
 		left: 50%;
 		bottom: -175px;
@@ -1127,7 +1158,7 @@ input[type="button"]:focus {
 }
 
 @media (max-width: 480px) {
-	.app-design__visual {
+	.presentation__visual {
 		bottom: -100px;
 		width: 576px;
 		height: 366px
@@ -1240,7 +1271,7 @@ input[type="button"]:focus {
 	left: 175px;
 	right: 125px;
 	bottom: 0;
-	border: 10px solid indianred;
+	border: 10px solid #C92009;
 }
 
 .work__list-el {
@@ -1510,7 +1541,7 @@ input[type="button"]:focus {
 	left: 75px;
 	right: 75px;
 	bottom: 0;
-	border: 10px solid indianred;
+	border: 10px solid #C92009;
 }
 
 .contact__visual {
@@ -1645,7 +1676,10 @@ input[type="button"]:focus {
 .footer {
 	position: relative;
 	width: 100%;
-	height: 100px
+	height: 100px;
+	background: rgba(250,250,250,0.5);
+	color: #C92009;
+	font-weight: bold;
 }
 
 .footer__wrapper {
@@ -1660,7 +1694,7 @@ input[type="button"]:focus {
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .footer__logo {
@@ -1668,7 +1702,7 @@ input[type="button"]:focus {
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%);
 }
 
 .footer__arrow {
@@ -1690,7 +1724,7 @@ input[type="button"]:focus {
 
 .footer__arrow-el {
 	width: 24px;
-	fill: indianred;
+	fill: #C92009;
 }
 
 @media (max-width: 767px) {
@@ -1709,7 +1743,8 @@ input[type="button"]:focus {
 		-webkit-box-ordinal-group: 4;
 		-webkit-order: 3;
 		-ms-flex-order: 3;
-		order: 3
+		order: 3;
+
 	}
 	.footer__logo {
 		position: static;
