@@ -574,7 +574,7 @@ input[type="button"]:focus {
 }
 
 .blurb__copy--tight {
-	max-width: 300px;
+	max-width: 400px;
 }
 
 .title {
@@ -718,6 +718,7 @@ input[type="button"]:focus {
 	-webkit-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
 	margin: 18px;
+	text-transform: lowercase;
 }
 
 .navigation__list>li a:hover {
@@ -1029,7 +1030,7 @@ input[type="button"]:focus {
 
 .about__visual {
 	position: absolute;
-	left: -15px;
+	left: -25px;
 	bottom: 10px;
 	z-index: 2;
 	width: 50%;
@@ -1164,7 +1165,7 @@ input[type="button"]:focus {
 
 @media (max-width: 767px) {
 	.presentation {
-		height: 400px;
+		height: 600px;
 		padding: 60px 0
 	}
 	.presentation__content {
@@ -1348,14 +1349,16 @@ input[type="button"]:focus {
 }
 
 .work__content-blurb p {
-	max-width: 350px
+	max-width: 350px;
+	height: 200px;
+	overflow: hidden;
 }
 
 .work__visual {
 	position: relative;
 	width: 52.5%;
 	box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21);
-	z-index: 2
+	z-index: 2;
 }
 
 .work__visual img {
@@ -1423,10 +1426,11 @@ input[type="button"]:focus {
 		padding: 0 15px
 	}
 	.work__content-blurb h3 {
-		font-size: 42px
+		font-size: 42px;
 	}
 	.work__content-blurb p {
-		max-width: 300px
+		max-width: 300px;
+		
 	}
 	.work__visual {
 		width: 600px;
@@ -1485,7 +1489,7 @@ input[type="button"]:focus {
 
 .blog__post-thumbnail img {
 	display: block;
-	width: 100%
+	width: 100%;
 }
 
 .blog__post-excerpt {
@@ -1504,12 +1508,12 @@ input[type="button"]:focus {
 }
 
 .blog__view-more--el {
-	padding: 8px 30px
+	padding: 8px 30px;
 }
 
 @media (max-width: 991px) {
 	.blog__heading {
-		font-size: 48px
+		font-size: 48px;
 	}
 	.blog__wrapper {
 		-webkit-box-orient: vertical;
@@ -1521,7 +1525,7 @@ input[type="button"]:focus {
 		-webkit-align-items: center;
 		-ms-flex-align: center;
 		-ms-grid-row-align: center;
-		align-items: center
+		align-items: center;
 	}
 	.blog__post {
 		width: 450px;
