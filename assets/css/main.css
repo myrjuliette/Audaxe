@@ -905,12 +905,13 @@ input[type="button"]:focus {
 .introduction::before {
 	content: "audaxe";
 	font-family: 'Maven Pro',sans-serif;
+	color:#5c5c5c;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	font-size: 40vw;
+	font-size: 10vw;
 	font-weight: 800;
 	opacity: .15;
 }
@@ -980,7 +981,7 @@ input[type="button"]:focus {
 
 @media (min-width: 1440px) {
 	.introduction::before {
-		font-size: 576px
+		font-size: 10vw;
 	}
 	.introduction__content-el--description {
 		font-size: 230px
@@ -1145,7 +1146,7 @@ input[type="button"]:focus {
 	width: 1036px;
 	height: 659px;
 	margin: 0;
-	background-image: url("../img/presentation-visual.png");
+	background-image: url("../img/presentation-visual4.png");
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat
